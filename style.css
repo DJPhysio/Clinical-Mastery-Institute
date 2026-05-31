@@ -555,7 +555,7 @@ img { max-width: 100%; display: block; }
 }
 
 .calendly-popup-block {
-  background: #ffffff;
+  background: var(--black-card);
   border: 1px solid var(--black-border);
   border-radius: 16px;
   padding: 48px 40px;
