@@ -555,7 +555,7 @@ img { max-width: 100%; display: block; }
 }
 
 .calendly-wrapper {
-  background: var(--black-card);
+  background: #ffffff;
   border: 1px solid var(--black-border);
   border-radius: 16px;
   overflow: hidden;
