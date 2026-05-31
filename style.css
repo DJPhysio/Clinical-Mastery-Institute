@@ -565,6 +565,7 @@ img { max-width: 100%; display: block; }
 
 .enquiry-form-solo {
   max-width: 720px;
+  margin: 0 auto;
 }
 
 .contact-grid {
