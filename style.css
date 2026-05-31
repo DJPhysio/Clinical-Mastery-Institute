@@ -563,6 +563,10 @@ img { max-width: 100%; display: block; }
 
 .enquiry-block { margin-bottom: 0; }
 
+.enquiry-form-solo {
+  max-width: 720px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
