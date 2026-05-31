@@ -131,19 +131,20 @@
       <h2 class="section-title">Ready to take the<br /><span class="gradient-text">next step?</span></h2>
       <p class="section-sub">Book a free Discovery Call directly into the calendar below, or send a message if you'd prefer to get in touch first.</p>
 
-      <!-- Calendly Embed -->
+      <!-- Calendly Popup -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       <div class="book-block">
         <div class="book-block-label">Book a Free Discovery Call</div>
-        <div class="calendly-wrapper">
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/danieljphysio/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0f0f0f&primary_color=2dd4bf"
-            style="min-width:320px;height:700px;"
-          ></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
+        <div class="calendly-popup-block">
+          <p class="calendly-popup-text">Select a time that suits you and book directly into Daniel's calendar. You'll receive a confirmation and Google Meet link by email.</p>
+          <button
+            class="btn btn-primary"
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/danieljphysio/30min?primary_color=2dd4bf'});return false;"
+          >
+            Choose a Time
+          </button>
         </div>
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       </div>
 
       <!-- Enquiry Form -->

@@ -554,11 +554,22 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--black-border);
 }
 
-.calendly-wrapper {
+.calendly-popup-block {
   background: var(--black-card);
-  border: 1px solid #000000;
+  border: 1px solid var(--black-border);
   border-radius: 16px;
-  overflow: hidden;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.calendly-popup-text {
+  font-size: 1.05rem;
+  color: var(--gray-light);
+  line-height: 1.7;
+  max-width: 560px;
 }
 
 .enquiry-block { margin-bottom: 0; }
