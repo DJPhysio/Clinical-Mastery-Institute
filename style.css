@@ -149,15 +149,10 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
-.logo-the      { font-size: 0.65rem; font-weight: 600; color: var(--gray-mid); letter-spacing: 0.15em; text-transform: uppercase; }
-.logo-physio   { font-size: 1.2rem; font-weight: 800; color: var(--white); }
-.logo-institute {
-  font-size: 1.2rem;
-  font-weight: 800;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -237,34 +232,12 @@ img { max-width: 100%; display: block; }
 
 .hero-logo { margin-bottom: 32px; }
 
-.hero-the {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--gray-mid);
-  margin-bottom: 8px;
-}
-
-.hero-physio {
-  font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 900;
-  line-height: 0.95;
-  color: var(--white);
-  letter-spacing: -0.02em;
-  margin-bottom: 0.15em;
-}
-
-.hero-institute {
-  font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0;
+.hero-logo-img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-tagline {
@@ -377,20 +350,12 @@ img { max-width: 100%; display: block; }
   top: calc(var(--nav-height) + 24px);
 }
 
-.photo-placeholder {
+.about-photo-img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  background: var(--black-card);
-  border: 1px solid var(--black-border);
+  height: auto;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gray-mid);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  display: block;
+  object-fit: cover;
 }
 
 .card-inner {
@@ -703,10 +668,13 @@ img { max-width: 100%; display: block; }
 }
 
 .footer-brand .footer-logo {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
   margin-bottom: 16px;
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .footer-brand p {
