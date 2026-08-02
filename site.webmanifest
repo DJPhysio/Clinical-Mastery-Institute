@@ -1,0 +1,21 @@
+{
+  "name": "Clinical Mastery Institute",
+  "short_name": "CMI",
+  "description": "Online clinical mentoring for early-career Australian physiotherapists.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#000000",
+  "theme_color": "#2DD4BF",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

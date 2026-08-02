@@ -1,21 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary meta -->
   <title>Clinical Mastery Institute — Clinical Mentoring for Physiotherapists</title>
-  <meta name="description" content="Online clinical mentoring for early-career private practice physiotherapists across Australia." />
+  <meta name="description" content="Online clinical mentoring for early-career private practice physiotherapists across Australia. Book a free Discovery Call with Daniel Jurjevic." />
+  <link rel="canonical" href="https://clinicalmasteryinstitute.com.au/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:site_name"    content="Clinical Mastery Institute" />
+  <meta property="og:locale"       content="en_AU" />
+  <meta property="og:title"        content="Clinical Mastery Institute — Clinical Mentoring for Physiotherapists" />
+  <meta property="og:description"  content="Online clinical mentoring for early-career private practice physiotherapists across Australia. Book a free Discovery Call." />
+  <meta property="og:url"          content="https://clinicalmasteryinstitute.com.au/" />
+  <meta property="og:image"        content="https://clinicalmasteryinstitute.com.au/assets/og-image.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"    content="Clinical Mastery Institute logo on black background" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Clinical Mastery Institute — Clinical Mentoring for Physiotherapists" />
+  <meta name="twitter:description" content="Online clinical mentoring for early-career private practice physiotherapists across Australia." />
+  <meta name="twitter:image"       content="https://clinicalmasteryinstitute.com.au/assets/og-image.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2DD4BF" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data: ProfessionalService + Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://clinicalmasteryinstitute.com.au/#organisation",
+        "name": "Clinical Mastery Institute",
+        "description": "Online clinical mentoring for early-career private practice physiotherapists across Australia.",
+        "url": "https://clinicalmasteryinstitute.com.au",
+        "logo": "https://clinicalmasteryinstitute.com.au/assets/logo.png",
+        "image": "https://clinicalmasteryinstitute.com.au/assets/og-image.jpg",
+        "areaServed": { "@type": "Country", "name": "Australia" },
+        "serviceType": "Clinical Mentoring",
+        "sameAs": [
+          "https://www.instagram.com/thephysioinstitute/",
+          "https://www.linkedin.com/company/clinical-mastery-institute"
+        ],
+        "founder": { "@id": "https://clinicalmasteryinstitute.com.au/#daniel" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://clinicalmasteryinstitute.com.au/#daniel",
+        "name": "Daniel Jurjevic",
+        "jobTitle": "Clinical Mentor and Physiotherapist",
+        "description": "Physiotherapist with 6 years of private practice experience and 2+ years in clinical leadership. Completing a Master of Musculoskeletal Physiotherapy.",
+        "image": "https://clinicalmasteryinstitute.com.au/assets/daniel.jpg",
+        "worksFor": { "@id": "https://clinicalmasteryinstitute.com.au/#organisation" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <!-- TODO: replace GA_MEASUREMENT_ID with your actual GA4 ID (format: G-XXXXXXXXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    const GA_MEASUREMENT_ID = 'GA_MEASUREMENT_ID';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_MEASUREMENT_ID);
+  </script>
+
+  <!-- ============================================================
+       META PIXEL — uncomment and replace YOUR_PIXEL_ID to enable
+       ============================================================
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  -->
 </head>
 <body>
 
+  <!-- Skip to main content (keyboard accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Navigation -->
-  <nav id="navbar">
+  <nav id="navbar" aria-label="Main navigation">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
         <img src="assets/logo.png" alt="Clinical Mastery Institute" class="nav-logo-img" />
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <button class="hamburger" id="hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
@@ -26,137 +127,165 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-logo">
-        <img src="assets/logo.png" alt="Clinical Mastery Institute" class="hero-logo-img" />
-      </div>
-      <p class="hero-tagline">Mentoring the next generation of Australian physiotherapists</p>
-      <div class="hero-actions">
-        <a href="#about" class="btn btn-outline">Learn More</a>
-        <a href="#book" class="btn btn-primary">Book a Free Discovery Call</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll to explore</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  <main id="main-content">
 
-  <!-- About Daniel -->
-  <section id="about">
-    <div class="container">
-      <div class="section-label">About Daniel</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>Built on experience,<br /><span class="gradient-text">shared honestly.</span></h2>
-          <p>I have spent the last 6 years working in private practice physiotherapy, and the past two years in a clinical leadership role mentoring junior clinicians, running professional development sessions, and managing both clinical and admin staff while maintaining a caseload of more than 75 patients per week.</p>
-          <p>I'm currently completing my Master of Musculoskeletal Physiotherapy degree. I know what it takes to keep developing your practice while working full-time in a demanding clinical environment.</p>
-          <p>I started Clinical Mastery Institute because I saw patterns with new clinicians that I could easily relate to. My first two years of private practice were a struggle. Senior clinicians left my clinic, I didn't have any structured mentoring, struggling to manage my own caseload and mental health. I then began to question why I even became a physiotherapist.</p>
-          <p>There are brilliant early-career physios who are technically capable but feel isolated in practice, second-guess their clinical reasoning, and don't have someone in their corner to help them navigate it all. That's exactly what I offer – the mentoring I wished I'd had.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number gradient-text">6</span>
-              <span class="stat-label">Years in Practice</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number gradient-text">2+</span>
-              <span class="stat-label">Years in Leadership</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number gradient-text">75+</span>
-              <span class="stat-label">Patients/Week</span>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="assets/logo.png" alt="Clinical Mastery Institute" class="hero-logo-img" />
+        </div>
+        <h1 class="hero-tagline">Mentoring the next generation of Australian physiotherapists</h1>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-outline">Learn More</a>
+          <a href="#book" class="btn btn-primary" data-track-book="hero">Book a Free Discovery Call</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Daniel -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">About Daniel</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Built on experience,<br /><span class="gradient-text">shared honestly.</span></h2>
+            <p>I have spent the last 6 years working in private practice physiotherapy, and the past two years in a clinical leadership role mentoring junior clinicians, running professional development sessions, and managing both clinical and admin staff while maintaining a caseload of more than 75 patients per week.</p>
+            <p>I'm currently completing my Master of Musculoskeletal Physiotherapy degree. I know what it takes to keep developing your practice while working full-time in a demanding clinical environment.</p>
+            <p>I started Clinical Mastery Institute because I saw patterns with new clinicians that I could easily relate to. My first two years of private practice were a struggle. Senior clinicians left my clinic, I didn't have any structured mentoring, struggling to manage my own caseload and mental health. I then began to question why I even became a physiotherapist.</p>
+            <p>There are brilliant early-career physios who are technically capable but feel isolated in practice, second-guess their clinical reasoning, and don't have someone in their corner to help them navigate it all. That's exactly what I offer – the mentoring I wished I'd had.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number gradient-text">6</span>
+                <span class="stat-label">Years in Practice</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number gradient-text">2+</span>
+                <span class="stat-label">Years in Leadership</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number gradient-text">75+</span>
+                <span class="stat-label">Patients/Week</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about-photo">
-          <img src="assets/daniel.PNG" alt="Daniel Jurjevic" class="about-photo-img" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="section-label">Services</div>
-      <h2 class="section-title">How I can<br /><span class="gradient-text">support you.</span></h2>
-      <p class="section-sub">All mentoring is delivered online. Whether you're working through a difficult case, developing your clinical reasoning, or figuring out what the next step in your career looks like — I've got you. If you are a private practice owner who needs support in mentoring your team, I can help.</p>
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon">&#128101;</div>
-          <h3>1:1 Mentoring</h3>
-          <p>Regular one-on-one online sessions tailored entirely to you. Work through complex cases, develop your clinical reasoning, get career guidance, or debrief after a difficult week in practice. This is dedicated time and space built around what matters most to you.</p>
-          <ul class="service-features">
-            <li>Case-based clinical reasoning support</li>
-            <li>Career planning and guidance</li>
-            <li>Regular, ongoing sessions</li>
-            <li>Private and confidential</li>
-          </ul>
-          <a href="#book" class="btn btn-outline service-btn">Book a Discovery Call</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">&#128101;&#128101;</div>
-          <h3>Group Mentoring</h3>
-          <p>Small group online sessions with other early-career physiotherapists. Work through cases together, share experiences, and learn from each other's clinical reasoning. Group sessions combine structured learning with the real value of peer discussion. I am able to accommodate multiple practitioners from the same clinic.</p>
-          <ul class="service-features">
-            <li>Small groups — quality over quantity</li>
-            <li>Peer case discussion and learning</li>
-            <li>Structured clinical scenarios</li>
-            <li>Community of like-minded clinicians</li>
-          </ul>
-          <a href="#book" class="btn btn-outline service-btn">Book a Discovery Call</a>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Book / Contact -->
-  <section id="book">
-    <div class="container">
-      <div class="section-label">Book &amp; Contact</div>
-      <h2 class="section-title">Ready to take the<br /><span class="gradient-text">next step?</span></h2>
-      <p class="section-sub">Book a free Discovery Call directly into the calendar below, or send a message if you'd prefer to get in touch first.</p>
-
-      <!-- Calendly Embed -->
-      <div class="book-block">
-        <div class="book-block-label">Book a Free Discovery Call</div>
-        <div class="calendly-wrapper">
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/danieljphysio/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=ffffff&text_color=111111&primary_color=2dd4bf"
-            style="min-width:320px;height:700px;"
-          ></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
+          <div class="about-photo">
+            <picture>
+              <source type="image/webp" srcset="assets/daniel.webp" />
+              <img
+                src="assets/daniel.jpg"
+                alt="Daniel Jurjevic, founder of Clinical Mastery Institute"
+                class="about-photo-img"
+                width="1200"
+                height="1454"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Enquiry Form -->
-      <div class="book-block enquiry-block">
-        <div class="book-block-label">Send an Enquiry</div>
-        <form class="contact-form enquiry-form-solo" id="enquiry-form">
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="section-label">Services</div>
+        <h2 class="section-title">How I can<br /><span class="gradient-text">support you.</span></h2>
+        <p class="section-sub">All mentoring is delivered online. Whether you're working through a difficult case, developing your clinical reasoning, or figuring out what the next step in your career looks like — I've got you. If you are a private practice owner who needs support in mentoring your team, I can help.</p>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="10" r="5" stroke="#2DD4BF" stroke-width="2"/>
+                <path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>1:1 Mentoring</h3>
+            <p>Regular one-on-one online sessions tailored entirely to you. Work through complex cases, develop your clinical reasoning, get career guidance, or debrief after a difficult week in practice. This is dedicated time and space built around what matters most to you.</p>
+            <ul class="service-features">
+              <li>Case-based clinical reasoning support</li>
+              <li>Career planning and guidance</li>
+              <li>Regular, ongoing sessions</li>
+              <li>Private and confidential</li>
+            </ul>
+            <a href="#book" class="btn btn-outline service-btn" data-track-book="service-1to1">Book a Discovery Call</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="4" stroke="#2DD4BF" stroke-width="2"/>
+                <circle cx="22" cy="10" r="4" stroke="#2DD4BF" stroke-width="2"/>
+                <path d="M2 28c0-4.418 3.582-8 8-8" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 20c4.418 0 8 3.582 8 8" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 20c3.314 0 6 2.686 6 6" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 20c-3.314 0-6 2.686-6 6" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Group Mentoring</h3>
+            <p>Small group online sessions with other early-career physiotherapists. Work through cases together, share experiences, and learn from each other's clinical reasoning. Group sessions combine structured learning with the real value of peer discussion. I am able to accommodate multiple practitioners from the same clinic.</p>
+            <ul class="service-features">
+              <li>Small groups — quality over quantity</li>
+              <li>Peer case discussion and learning</li>
+              <li>Structured clinical scenarios</li>
+              <li>Community of like-minded clinicians</li>
+            </ul>
+            <a href="#book" class="btn btn-outline service-btn" data-track-book="service-group">Book a Discovery Call</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Book / Contact -->
+    <section id="book">
+      <div class="container">
+        <div class="section-label">Book &amp; Contact</div>
+        <h2 class="section-title">Ready to take the<br /><span class="gradient-text">next step?</span></h2>
+        <p class="section-sub">Book a free Discovery Call directly into the calendar below, or send a message if you'd prefer to get in touch first.</p>
+
+        <!-- Calendly Embed -->
+        <div class="book-block">
+          <div class="book-block-label">Book a Free Discovery Call</div>
+          <div class="calendly-wrapper">
+            <!-- Calendly inline widget begin -->
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/danieljphysio/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=ffffff&text_color=111111&primary_color=2dd4bf"
+              style="min-width:320px;height:700px;"
+            ></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+
+        <!-- Enquiry Form -->
+        <div class="book-block enquiry-block">
+          <div class="book-block-label">Send an Enquiry</div>
+
+          <form class="contact-form enquiry-form-solo" id="enquiry-form" novalidate>
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+                <span class="field-error" aria-live="polite"></span>
               </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+                <span class="field-error" aria-live="polite"></span>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Phone (optional)</label>
-                <input type="tel" id="phone" name="phone" placeholder="+61 XXX XXX XXX" />
+                <input type="tel" id="phone" name="phone" placeholder="+61 XXX XXX XXX" autocomplete="tel" />
               </div>
               <div class="form-group">
                 <label for="profession">I am a&hellip;</label>
@@ -166,6 +295,7 @@
                   <option value="Student">Student</option>
                   <option value="Other">Other</option>
                 </select>
+                <span class="field-error" aria-live="polite"></span>
               </div>
             </div>
             <div class="form-group">
@@ -174,12 +304,28 @@
             </div>
             <input type="hidden" name="_replyto" id="_replyto" />
             <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-            <p class="form-privacy">Your information will never be shared with third parties.</p>
+            <p class="form-error-global" id="form-error-global" aria-live="assertive" hidden>Something went wrong. Please try again, or email <a href="mailto:danieljphysio@gmail.com">danieljphysio@gmail.com</a> directly.</p>
+            <p class="form-privacy">Your information is handled in accordance with our privacy policy and will never be sold or shared with third parties.</p>
           </form>
-      </div>
 
-    </div>
-  </section>
+          <!-- Success state — revealed after successful submission -->
+          <div class="form-success" id="form-success" hidden>
+            <div class="form-success-icon" aria-hidden="true">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="27" stroke="#2DD4BF" stroke-width="2"/>
+                <path d="M17 28l8 8 14-16" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Message received.</h3>
+            <p>Thanks for getting in touch. I'll respond within one business day.</p>
+            <button type="button" class="btn btn-outline" id="form-reset-btn">Send another message</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer id="footer">
@@ -203,6 +349,7 @@
         <div class="footer-links">
           <h4>Connect</h4>
           <ul>
+            <!-- TODO: update Instagram URL once handle migrated from @thephysioinstitute to CMI account -->
             <li><a href="https://www.instagram.com/thephysioinstitute/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="https://www.linkedin.com/company/clinical-mastery-institute" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
