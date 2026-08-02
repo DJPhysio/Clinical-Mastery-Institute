@@ -5,7 +5,7 @@
 
 // --- Fade-up scroll animations ---
 var fadeEls = document.querySelectorAll(
-  '.service-card, .contact-item, .about-stats .stat, .feature-card, .blog-card'
+  '.service-card, .contact-item, .about-stats .stat, .feature-card, .blog-card, .testimonial-card'
 );
 fadeEls.forEach(function (el) { el.classList.add('fade-up'); });
 
@@ -128,6 +128,54 @@ if (form) {
       }
     } catch (err) {
       if (globalError) globalError.hidden = false;
+      btn.textContent = original;
+      btn.disabled    = false;
+    }
+  });
+}
+
+// --- Lead magnet form (email capture for free resource) ---
+// Replace REPLACE_WITH_LEAD_MAGNET_FORM_ID with a second Formspree endpoint
+var LEAD_MAGNET_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_LEAD_MAGNET_FORM_ID';
+
+var lmForm    = document.getElementById('lead-magnet-form');
+var lmSuccess = document.getElementById('lead-magnet-success');
+
+if (lmForm) {
+  lmForm.querySelectorAll('input[required]').forEach(function (input) {
+    input.addEventListener('blur',  function () { validateField(input); });
+    input.addEventListener('input', function () {
+      if (input.closest('.form-group') && input.closest('.form-group').classList.contains('has-error')) {
+        validateField(input);
+      }
+    });
+  });
+
+  lmForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var required = Array.from(lmForm.querySelectorAll('input[required]'));
+    var allValid = required.map(function (f) { return validateField(f); }).every(Boolean);
+    if (!allValid) return;
+
+    var btn      = lmForm.querySelector('button[type="submit"]');
+    var original = btn.textContent;
+    btn.textContent = 'Sending…';
+    btn.disabled    = true;
+
+    try {
+      var res = await fetch(LEAD_MAGNET_ENDPOINT, {
+        method:  'POST',
+        headers: { Accept: 'application/json' },
+        body:    new FormData(lmForm),
+      });
+      if (res.ok) {
+        lmForm.hidden = true;
+        if (lmSuccess) lmSuccess.hidden = false;
+        trackEvent('generate_lead', { method: 'lead_magnet' });
+      } else {
+        throw new Error('non-ok');
+      }
+    } catch (err) {
       btn.textContent = original;
       btn.disabled    = false;
     }

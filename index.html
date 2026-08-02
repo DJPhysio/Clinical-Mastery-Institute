@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clinical Mastery Institute — Clinical Mentoring for Physiotherapists</title>
-  <meta name="description" content="Online clinical mentoring for early-career private practice physiotherapists across Australia. Book a free Discovery Call with Daniel Jurjevic." />
+  <title>Clinical Mastery Institute — Online Mentoring for Early-Career Physiotherapists</title>
+  <meta name="description" content="Private practice is harder than anyone told you. CMI is online clinical mentoring for early-career Australian physiotherapists. Work through real cases, build clinical reasoning, and stop figuring it out alone." />
   <link rel="canonical" href="https://clinicalmasteryinstitute.com.au/" />
   <meta property="og:type"         content="website" />
   <meta property="og:site_name"    content="Clinical Mastery Institute" />
@@ -70,7 +70,8 @@
         <div class="hero-logo">
           <img src="/assets/logo.png" alt="Clinical Mastery Institute" class="hero-logo-img" />
         </div>
-        <h1 class="hero-tagline">Mentoring the next generation of Australian physiotherapists</h1>
+        <h1 class="hero-tagline">Private practice is harder<br />than anyone told you.</h1>
+        <p class="hero-sub">CMI is online clinical mentoring for early-career Australian physiotherapists — a regular, structured space to work through complex cases, build your clinical reasoning, and stop figuring it out alone.</p>
         <div class="hero-actions">
           <a href="/about/" class="btn btn-outline">Learn More</a>
           <a href="/book/" class="btn btn-primary" data-track-book="hero">Book a Free Discovery Call</a>
@@ -100,9 +101,10 @@
                 <span class="stat-number gradient-text">2+</span>
                 <span class="stat-label">Years in Leadership</span>
               </div>
+              <!-- Replace with physios mentored count once available [[NEEDS DANIEL: X]] -->
               <div class="stat">
-                <span class="stat-number gradient-text">75+</span>
-                <span class="stat-label">Patients/Week</span>
+                <span class="stat-number gradient-text">100%</span>
+                <span class="stat-label">Online &amp; Nationwide</span>
               </div>
             </div>
             <a href="/about/" class="btn btn-outline" style="margin-top:32px">Read Daniel's story</a>
@@ -189,6 +191,74 @@
             <a href="/for-clinic-owners/" class="btn btn-outline service-btn" data-track-book="home-clinics">Learn more</a>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials — HIDDEN until Daniel provides real quotes. Remove the 'hidden' attribute to activate. -->
+    <section class="testimonials-section" id="testimonials" hidden>
+      <div class="container">
+        <div class="section-label">What physios say</div>
+        <h2 class="section-title">Don't take<br /><span class="gradient-text">my word for it.</span></h2>
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">[[NEEDS DANIEL: testimonial text — 2–4 sentences about the experience of mentoring. What changed? What was the most valuable part?]]</p>
+            <footer class="testimonial-author">
+              <strong>[[First name]]</strong>
+              <span>Physiotherapist, [[City, State]]</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">[[NEEDS DANIEL: testimonial text]]</p>
+            <footer class="testimonial-author">
+              <strong>[[First name]]</strong>
+              <span>Physiotherapist, [[City, State]]</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">[[NEEDS DANIEL: testimonial text]]</p>
+            <footer class="testimonial-author">
+              <strong>[[First name]]</strong>
+              <span>Physiotherapist, [[City, State]]</span>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead magnet — HIDDEN until Daniel provides the resource. Remove 'hidden' to activate. -->
+    <section class="lead-magnet-section" id="free-resource" hidden>
+      <div class="container">
+        <div class="lead-magnet-inner">
+          <div class="lead-magnet-copy">
+            <div class="section-label">Free Resource</div>
+            <h2>[[NEEDS DANIEL: lead magnet title — e.g. "5 Clinical Reasoning Questions Every Early-Career Physio Should Be Asking"]]</h2>
+            <p>[[NEEDS DANIEL: 1–2 sentences describing what this resource is and who it helps — keep it specific and outcome-focused.]]</p>
+          </div>
+          <div class="lead-magnet-form-wrap">
+            <!-- Action: replace REPLACE_WITH_LEAD_MAGNET_FORM_ID with a second Formspree form ID created for this resource -->
+            <form class="lead-magnet-form" id="lead-magnet-form" novalidate>
+              <div class="form-group">
+                <label for="lm-name" class="sr-only">First name</label>
+                <input type="text" id="lm-name" name="name" placeholder="First name" required autocomplete="given-name" />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="lm-email" class="sr-only">Email address</label>
+                <input type="email" id="lm-email" name="email" placeholder="Email address" required autocomplete="email" />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send it to me</button>
+            </form>
+            <div class="lead-magnet-success" id="lead-magnet-success" hidden>
+              <p>On its way! Check your inbox.</p>
+            </div>
+            <p class="form-privacy">No spam. Unsubscribe any time. See our <a href="/privacy/" style="color:var(--teal)">privacy policy</a>.</p>
+          </div>
         </div>
       </div>
     </section>
