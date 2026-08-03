@@ -5,7 +5,7 @@
 
 // --- Fade-up scroll animations ---
 var fadeEls = document.querySelectorAll(
-  '.service-card, .contact-item, .about-stats .stat, .feature-card, .blog-card, .testimonial-card'
+  '.service-card, .contact-item, .feature-card, .blog-card, .testimonial-card'
 );
 fadeEls.forEach(function (el) { el.classList.add('fade-up'); });
 
