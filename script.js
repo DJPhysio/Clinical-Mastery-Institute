@@ -136,7 +136,7 @@ if (form) {
 
 // --- Lead magnet form (email capture for free resource) ---
 // Replace REPLACE_WITH_LEAD_MAGNET_FORM_ID with a second Formspree endpoint
-var LEAD_MAGNET_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_LEAD_MAGNET_FORM_ID';
+var LEAD_MAGNET_ENDPOINT = 'https://formspree.io/f/mlgqqlae';
 
 var lmForm    = document.getElementById('lead-magnet-form');
 var lmSuccess = document.getElementById('lead-magnet-success');

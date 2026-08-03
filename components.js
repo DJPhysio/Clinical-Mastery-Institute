@@ -4,7 +4,7 @@
   // ============================================================
   // CONFIGURATION — update GA_MEASUREMENT_ID before launch
   // ============================================================
-  var GA_MEASUREMENT_ID = 'GA_MEASUREMENT_ID'; // TODO: replace with G-XXXXXXXXXX
+  var GA_MEASUREMENT_ID = 'G-JJELL0KQ13';
 
   // ============================================================
   // GOOGLE ANALYTICS 4
