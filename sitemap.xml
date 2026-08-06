@@ -49,15 +49,9 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://clinicalmasteryinstitute.com.au/blog/</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://clinicalmasteryinstitute.com.au/caseload-tracker/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clinicalmasteryinstitute.com.au/blog/posts/why-early-career-physios-struggle/</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
