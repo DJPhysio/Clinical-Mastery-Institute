@@ -966,6 +966,22 @@ img { max-width: 100%; display: block; }
   margin-top: 40px;
 }
 
+#outcomes .feature-card-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 860px) {
+  #outcomes .feature-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  #outcomes .feature-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .feature-card {
   background: var(--black-card);
   border: 1px solid var(--black-border);
